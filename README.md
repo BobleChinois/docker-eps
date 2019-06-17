@@ -3,7 +3,7 @@ docker-compose made of bitcoind and eps, for maximum simplicity
 
 ## how to run
 Get the `masterpubkey` in Electrum: Wallet > Information
-
+![masterpubkey in Electrum](pics/Electrum.png)
 ```
 export MASTERPUBKEY=xpub...
 docker-compose up
