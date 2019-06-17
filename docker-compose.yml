@@ -3,8 +3,7 @@ services:
   bitcoind:
     restart: unless-stopped
     container_name: bitcoind
-    image: sosthenebitcoin/bitcoind:latest
-    command: "bitcoind -testnet -server -rpcbind=bitcoind -rpcuser=eps -rpcpassword=this_is_a_fixed_password -rpcport=47382 -rpcallowip=0.0.0.0/0"
+    image: sosthenebitcoin/bitcoind_$NETWORK:latest
     ports:
       - "47382:47382"
       - "39388:39388"
